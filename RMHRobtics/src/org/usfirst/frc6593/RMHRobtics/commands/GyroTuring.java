@@ -12,6 +12,7 @@
 package org.usfirst.frc6593.RMHRobtics.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc6593.RMHRobtics.Robot;
+import org.usfirst.frc6593.RMHRobtics.subsystems.DriveTrain;
 
 /**
  *
@@ -37,12 +38,12 @@ public class GyroTuring extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.driveTrain.gyro.reset();
+    	DriveTrain.gyro.reset();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.GyroRoateDrive(.8);
+    	Robot.driveTrain.GyroRoateDrive(.5 , 180);
     }
 
     // Make this return true when this Command no longer needs to run execute()

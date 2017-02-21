@@ -37,11 +37,14 @@ public class TankDrive extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	
+    	Robot.driveTrain.GyroReset();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	Robot.driveTrain.tankdrive(Robot.oi.getDriveLeftSpeed(), Robot.oi.getDriveRightSpeed());
+    	Robot.driveTrain.teleopGyroStraight(Robot.oi.xbox_Joystick);
     	//Robot.driveTrain.gyroDrive(Robot.oi.getDriveLeftSpeed(), Robot.oi.getDriveRightSpeed());
     }
 
