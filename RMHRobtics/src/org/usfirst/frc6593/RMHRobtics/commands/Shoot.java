@@ -42,7 +42,7 @@ public class Shoot extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	//if(Robot.shooting.stop){
-    	Robot.shooting.startShooting(-.5);
+    	//Robot.shooting.startShooting(-.5);
     	/*}else{
     		Robot.shooting.stopShooting();;
     	}*/
