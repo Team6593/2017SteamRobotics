@@ -43,11 +43,12 @@ public class TankDrive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.tankdrive(Robot.oi.getDriveLeftSpeed(), Robot.oi.getDriveRightSpeed());
+    	//Robot.driveTrain.tankdrive(-Robot.oi.getDriveLeftSpeed(), -Robot.oi.getDriveRightSpeed());
     	//Robot.driveTrain.tankdrive(Robot.oi.getDriveRightSpeed(), Robot.oi.getDriveLeftSpeed());
     	//Robot.driveTrain.teleopGyroStraight(Robot.oi.xbox_Joystick);
     	//Robot.driveTrain.gyroDrive(Robot.oi.getDriveLeftSpeed(), Robot.oi.getDriveRightSpeed());
-    	//Robot.driveTrain.teleopGyroRoate(Robot.oi.getDriveLeftSpeed(), Robot.oi.getDriveRightSpeed());
+    	Robot.driveTrain.teleopGyroRoate(Robot.oi.getDriveRightSpeed(), Robot.oi.getDriveLeftSpeed());
+
     }
 
     // Make this return true when this Command no longer needs to run execute()

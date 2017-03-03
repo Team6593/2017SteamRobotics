@@ -43,7 +43,8 @@ public class GyroTuring extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.GyroRoateDrive(.5 , 180);
+    	Robot.driveTrain.GyroRoateDrive(1 , 180);
+    	//Robot.driveTrain.gyroTurn(90, 5);
     }
 
     // Make this return true when this Command no longer needs to run execute()
