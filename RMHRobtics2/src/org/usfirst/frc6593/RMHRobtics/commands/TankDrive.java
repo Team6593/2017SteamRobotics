@@ -47,7 +47,9 @@ public class TankDrive extends Command {
     	//Robot.driveTrain.tankdrive(Robot.oi.getDriveRightSpeed(), Robot.oi.getDriveLeftSpeed());
     	//Robot.driveTrain.teleopGyroStraight(Robot.oi.xbox_Joystick);
     	//Robot.driveTrain.gyroDrive(Robot.oi.getDriveLeftSpeed(), Robot.oi.getDriveRightSpeed());
-    	Robot.driveTrain.teleopGyroRoate(Robot.oi.getDriveRightSpeed(), Robot.oi.getDriveLeftSpeed());
+    	//Robot.driveTrain.teleopGyroRoate(Robot.oi.getDriveLeftSpeed(), Robot.oi.getDriveRightSpeed());
+    	Robot.driveTrain.teleopGyroRoate(Robot.oi.xbox_Joystick.getY(), Robot.oi.xbox_Joystick.getZ());
+
 
     }
 
