@@ -9,8 +9,14 @@ public class MiddleStation extends CommandGroup {
 
     public MiddleStation() {
         // Add Commands here:
-    	 addSequential(new AutoDriveFastForward(5));
-         addSequential(new AutoRotate(0));
+    	 addSequential(new AutoDriveFastForward(5.5));
+         addSequential(new AutoDriveBack(3));
+         addSequential(new AutoRotate(3));
+    	 addSequential(new AutoDriveFastForward(3));
+
+
+         
+         
 
         //      addSequential(new Command2());
         // these will run in order.

@@ -159,6 +159,13 @@ public class DriveTrain extends Subsystem {
 	   	methodTimer.stop();
    	}
 	
+	public void arcadeDrive(double s, double sp){
+		s = 1;
+		sp = 0.5;
+		robotDrive21.arcadeDrive(s, sp);
+		
+		
+	}
 	public void teleopGyroRoate(double speed, double speeds){
 		//gyro.reset();
         
@@ -169,7 +176,9 @@ public class DriveTrain extends Subsystem {
 	            //angle = rot;
 	            
 	            //robotDrive21.drive(joy.getX(), -angle*kP); // drive towards heading 0
-	            robotDrive21.arcadeDrive(speed, -speeds);;
+	            robotDrive21.arcadeDrive(speed, -speeds);
+	           //robotDrive21.arcadeDrive(speed, -speeds, true);
+			//arcadeDrive(speed, speeds);
 	            //Timer.delay(0.004);
 	        
         
